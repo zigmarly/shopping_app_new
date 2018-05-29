@@ -1,3 +1,4 @@
 class Store < ApplicationRecord
-    has_many :departments
+    has_many :department, dependent: :destroy 
+    
 end
